@@ -54,6 +54,12 @@
         "charconv": "cpp",
         "ratio": "cpp",
         "variant": "cpp",
-        "format": "cpp"
+        "format": "cpp",
+        "thread": "cpp",
+        "chrono": "cpp",
+        "cstring": "cpp",
+        "set": "cpp",
+        "semaphore": "cpp",
+        "stop_token": "cpp"
     }
 }
