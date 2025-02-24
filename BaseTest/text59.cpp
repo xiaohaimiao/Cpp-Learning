@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
-int a_feet, b_feet, feet_sammation, animal_summation;
+int hensFeet, rabbitsFeet, feetSummation, animalSummation;
 int main(){
-    cin >> a_feet >> b_feet >> feet_sammation >> animal_summation;
+    cin >> hensFeet >> rabbitsFeet >> feetSummation >> animalSummation;
     int a = 0, b = 0;
-    if (a_feet < b_feet){
-        a = a_feet;
-        a_feet = b_feet;
-        b_feet = a;
+    if (hensFeet < rabbitsFeet){
+        a = hensFeet;
+        hensFeet = rabbitsFeet;
+        rabbitsFeet = a;
     }
-    a = a_feet * animal_summation - feet_sammation;
+    a = hensFeet * animalSummation - feetSummation;
 
     if (a <= 0){
         cout << "题目有误！" << endl;
@@ -17,14 +17,14 @@ int main(){
     }
 
 
-    b = a_feet - b_feet;
+    b = hensFeet - rabbitsFeet;
     if (a % b != 0){
         cout << "题目有误！" << endl;
         return 0;
     }
 
     b = a / b;
-    a = animal_summation - b;
+    a = animalSummation - b;
     if (b <= 0 || a <= 0){
         cout << "题目有误！" << endl;
         return 0;
